@@ -1,0 +1,144 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+section {
+  height: 100vh;
+  background-color: rgb(0, 0, 0);
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+/*  */
+.hero-img {
+  background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
+    url("./img/hero-img.jpg");
+  width: 100%;
+  height: 100%;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  position: relative;
+}
+
+.hero-text {
+  text-align: center;
+  position: absolute;
+  top: 35%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.peoplePage h1,
+.starshipsPage h1,
+.planetsPage h1 {
+  color: #ffd60a;
+  font-size: 50px;
+  text-align: center;
+  padding: 80px;
+}
+
+.peoplePage button,
+.starshipsPage button,
+.planetsPage button {
+  background: none;
+  color: #ffd60a;
+  font-weight: 500;
+  font-size: 25px;
+  border-color: #ffd60a;
+  border-radius: 10px;
+  border-style: solid;
+  border-width: 2px;
+  text-align: center;
+  cursor: pointer;
+}
+
+.hero-text button {
+  background: transparent;
+  color: #fffffd;
+  font-size: 25px;
+  font-weight: 500;
+  border-color: #ffffff;
+  border-radius: 10px;
+  border-style: solid;
+  border-width: 3px;
+  text-align: center;
+  cursor: pointer;
+}
+
+.hero-text button:hover,
+.peoplePage button:hover,
+.starshipsPage button:hover,
+.planetsPage button:hover {
+  color: #000000;
+  background-color: #ffd60a;
+  border-color: #ffd60a;
+}
+
+.hero-text button {
+  margin: 20px;
+  width: 180px;
+  height: 60px;
+}
+
+.peoplePage button,
+.starshipsPage button,
+.planetsPage button {
+  position: absolute;
+  top: 10px;
+  right: 10px;
+  width: 100px;
+  height: 50px;
+  overflow-y: auto;
+}
+
+#people-table,
+#starships-table,
+#planets-table {
+  font-family: Arial, Helvetica, sans-serif;
+  border-collapse: collapse;
+  width: 100%;
+  table-layout: fixed;
+  text-align: center;
+  word-wrap: break-word;
+  margin-top: 50px;
+  background-color: #fcfaee;
+}
+
+/* for zebre-striped tables */
+#people-table tr:nth-child(even),
+#starships-table tr:nth-child(even),
+#planets-table tr:nth-child(even) {
+  background-color: #ebebeb;
+}
+
+#people-table tr:hover,
+#starships-table tr:hover,
+#planets-table tr:hover {
+  background-color: #ffe45c;
+  cursor: pointer;
+}
+
+#people-table th,
+#starships-table th,
+#planets-table th {
+  padding-top: 30px;
+  padding-bottom: 30px;
+  background-color: #000000;
+  color: #ffd60a;
+  border: 1px solid #ddd;
+}
+
+#starships-table td,
+#planets-table td,
+#people-table td {
+  border: 1px solid #ddd;
+  padding: 20px;
+}
+
+#planets-table a,
+#people-table a {
+  color: #ffd60a;
+  text-decoration: none;
+}
