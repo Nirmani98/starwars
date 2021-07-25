@@ -1,6 +1,6 @@
 # StarWars API Project
 
-This project allows users to view data of characters, planets and starships from the Star Wars universe.
+This project allows users to view profiles of characters, planets and starships from the Star Wars universe.
 
 ## How to Use the Web App
 ### Home Page:
@@ -42,23 +42,4 @@ Every page has a **Back button** at the top right side for users to go back to t
 The initial idea was to create a one-page web application. However, It would have complicated the development as I need to fetch data from API. Therefore, I decided to have three pages and each dedicated to each category. One of the features that I wanted to include is to add links to rows that have a connection to other tables
 (For example: connect films in People table to Film table to enable users to see corresponding data). Since the Web application has three pages, it is necessary
 to have a reliable navigation system on every page. Therefore **Back buttons** are needed to be added. Overall the Web application is simple and user friendly, but I look forward to improving it in the future.
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-	
-
 	
