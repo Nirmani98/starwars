@@ -15,6 +15,11 @@ function table3Row(data) {
     climate,
     surface_water,
     residents,
+    diameter,
+    gravity,
+    terrain,
+    population,
+    films,
   } = data;
   row.appendChild(constructElement("td", name));
   row.appendChild(constructElement("td", rotation_period));
@@ -22,6 +27,11 @@ function table3Row(data) {
   row.appendChild(constructElement("td", climate));
   row.appendChild(constructElement("td", surface_water));
   row.appendChild(constructElement("td", residents));
+  row.appendChild(constructElement("td", diameter));
+  row.appendChild(constructElement("td", gravity));
+  row.appendChild(constructElement("td", terrain));
+  row.appendChild(constructElement("td", population));
+  row.appendChild(constructElement("td", films));
   return row;
 }
 

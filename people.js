@@ -18,12 +18,28 @@ async function getapi(api_url) {
 // tableRow get all data as a single object to deconstruction and create columns from the data.
 function tableRow(data) {
   const row = document.createElement("tr");
-  const { name, height, birth_year, mass, starships } = data;
+  const {
+    name,
+    height,
+    birth_year,
+    mass,
+    starships,
+    hair_color,
+    skin_color,
+    eye_color,
+    gender,
+    homeworld,
+  } = data;
   row.appendChild(constructElement("td", name));
   row.appendChild(constructElement("td", height));
   row.appendChild(constructElement("td", birth_year));
   row.appendChild(constructElement("td", mass));
   row.appendChild(constructElement("td", starships));
+  row.appendChild(constructElement("td", hair_color));
+  row.appendChild(constructElement("td", skin_color));
+  row.appendChild(constructElement("td", eye_color));
+  row.appendChild(constructElement("td", gender));
+  row.appendChild(constructElement("td", homeworld));
   return row;
 }
 

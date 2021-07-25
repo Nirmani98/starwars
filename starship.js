@@ -15,6 +15,14 @@ function table2Row(data) {
     cost_in_credits,
     length,
     max_atmosphering_speed,
+    crew,
+    passengers,
+    cargo_capacity,
+    consumables,
+    hyperdrive_rating,
+    MGLT,
+    starship_class,
+    pilots,
   } = data;
   row.appendChild(constructElement("td", name));
   row.appendChild(constructElement("td", model));
@@ -22,6 +30,16 @@ function table2Row(data) {
   row.appendChild(constructElement("td", cost_in_credits));
   row.appendChild(constructElement("td", length));
   row.appendChild(constructElement("td", max_atmosphering_speed));
+  row.appendChild(constructElement("td", crew));
+  row.appendChild(constructElement("td", passengers));
+  row.appendChild(constructElement("td", cargo_capacity));
+  row.appendChild(constructElement("td", consumables));
+  row.appendChild(constructElement("td", hyperdrive_rating));
+  row.appendChild(constructElement("td", MGLT));
+  row.appendChild(constructElement("td", starship_class));
+
+  row.appendChild(constructElement("td", pilots));
+
   return row;
 }
 
