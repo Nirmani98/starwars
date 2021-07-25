@@ -10,7 +10,7 @@ section {
   font-family: Arial, Helvetica, sans-serif;
 }
 
-/*  */
+/*add a hero image as cover*/
 .hero-img {
   background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
     url("./img/hero-img.jpg");

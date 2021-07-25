@@ -1,12 +1,6 @@
 //get  data for planets table
 const people_url = "https://swapi.dev/api/people/";
 
-function getPlanetApi() {
-  this.fetch(people_url).then((res) => {
-    this.fetch(res.planets).then((planets) => alert(JSON.stringify(planets)));
-  });
-}
-
 async function getPlanetApi(people_url) {
   const res = await fetch(people_url);
   return res.json();

@@ -1,14 +1,6 @@
 //get  data for startships table
 const film_url = "https://swapi.dev/api/people/films/";
 
-function getapi2() {
-  this.fetch(film_url).then((res) => {
-    this.fetch(res.starships).then((starships) =>
-      alert(JSON.stringify(starships))
-    );
-  });
-}
-
 async function getapi2(film_url) {
   const res = await fetch(film_url);
   return res.json();

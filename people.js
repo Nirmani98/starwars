@@ -1,17 +1,21 @@
-//fetch data from people s table
+//take api as a variable
 const api_url = "https://swapi.dev/api/people/starships/";
 
-function getapi() {
-  this.fetch(api_url).then((res) => {
-    this.fetch(res.people).then((people) => alert(JSON.stringify(people)));
-  });
-}
+// another way to fect data from api
+// function getapi() {
+//   this.fetch(api_url).then((res) => {
+//     this.fetch(res.people).then((people) => alert(JSON.stringify(people)));
+//   });
+// }
 
+//async function to pass api url
 async function getapi(api_url) {
-  const res = await fetch(api_url);
-  return res.json();
+  const res = await fetch(api_url); //define constant respone and store fetched data
+  return res.json(); // define constant data and store in JSON format
 }
 
+//create a table with fetched data
+// tableRow get all data as a single object to deconstruction and create columns from the data.
 function tableRow(data) {
   const row = document.createElement("tr");
   const { name, height, birth_year, mass, starships } = data;
@@ -23,10 +27,11 @@ function tableRow(data) {
   return row;
 }
 
+//tagName: read only property
 function constructElement(tagName, text, cssClasses) {
-  const element = document.createElement(tagName);
-  const content = document.createTextNode(text);
-  element.appendChild(content);
+  const element = document.createElement(tagName); //returns the tag name of the element
+  const content = document.createTextNode(text); //define fetched data
+  element.appendChild(content); //appened each fetched data
   if (cssClasses) {
     element.classList.add(...cssClasses);
   }
@@ -35,8 +40,9 @@ function constructElement(tagName, text, cssClasses) {
 
 const pplTable = document
   .getElementById("people-table")
-  .getElementsByTagName("tbody")[0];
+  .getElementsByTagName("tbody")[0]; //get all fetched data to insert into table
 
+// store data from people api into a table as define above
 getapi("https://swapi.dev/api/people/").then((data) => {
   data.results.forEach((results) => {
     const row = tableRow(results);
